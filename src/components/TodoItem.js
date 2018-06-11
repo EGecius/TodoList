@@ -8,8 +8,9 @@ import {
 
 export default class TodoItem extends Component {
   render() {
-    return 
-          <Text style={styles.item}>Item 1</Text>;
+    return (
+          <Text style={styles.item}>Item 1</Text>
+    );
   }
 }
 

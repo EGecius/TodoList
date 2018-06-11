@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 
 
+import TodoItem from './TodoItem';
+
 
 export default class TodoList extends Component {
   render() {
@@ -16,9 +18,9 @@ export default class TodoList extends Component {
         <Text style={styles.header}>Todo list!</Text>
 
         <View style={styles.content}>
-          <Text style={styles.item}>Item 1</Text>
-          <Text style={styles.item}>Item 2</Text>
-          <Text style={styles.item}>Item 3</Text>
+          <TodoItem />
+          <TodoItem />
+          <TodoItem />
         </View>
 
       </View>
