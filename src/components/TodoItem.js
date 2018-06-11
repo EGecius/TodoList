@@ -9,7 +9,7 @@ import {
 export default class TodoItem extends Component {
   render() {
     return (
-          <Text style={styles.item}>Item 1</Text>
+          <Text style={styles.item}>{this.props.title}</Text>
     );
   }
 }
