@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  Text,
-  View
+  Text
 } from 'react-native';
 
 export default class TodoItem extends Component {

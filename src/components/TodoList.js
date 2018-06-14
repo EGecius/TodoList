@@ -21,6 +21,7 @@ export default class TodoList extends Component {
           <TodoItem title={"Item 1"}/>
           <TodoItem title={"Item 2"}/>
           <TodoItem title={"Item 3"}/>
+          <TodoItem title={"Item 4"}/>
         </View>
 
       </View>
