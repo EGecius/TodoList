@@ -4,7 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
-  ScrollView
+  FlatList
 } from 'react-native';
 
 
@@ -27,13 +27,14 @@ export default class TodoList extends Component {
           Todo list
         </Text>
 
-        <ScrollView style={styles.content}>
-          {
-            items.map((item, index) => {
-              return <TodoItem title={item} key={index} />
-            })
-          }
-        </ScrollView>
+        <FlatList
+          data={items}
+          style={styles.content}
+          renderItem={(row) => {
+            return <TodoItem title={row.item} />
+          }}
+          keyExtractor={item => item}
+        />
       </View>
     );
   }
