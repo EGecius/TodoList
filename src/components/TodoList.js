@@ -23,7 +23,9 @@ export default class TodoList extends Component {
     return (
       <View style={styles.container}>
         
-        <Text style={styles.header}>Todo list!</Text>
+        <Text style={styles.header}>
+          Todo list
+        </Text>
 
         <ScrollView style={styles.content}>
           {
