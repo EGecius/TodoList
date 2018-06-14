@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  ScrollView
 } from 'react-native';
 
 
@@ -24,13 +25,13 @@ export default class TodoList extends Component {
         
         <Text style={styles.header}>Todo list!</Text>
 
-        <View style={styles.content}>
+        <ScrollView style={styles.content}>
           {
             items.map((item, index) => {
               return <TodoItem title={item} key={index} />
             })
           }
-        </View>
+        </ScrollView>
       </View>
     );
   }
@@ -47,6 +48,10 @@ const styles = StyleSheet.create({
     fontSize: 28,
     textAlign: 'center',
     margin: 10,
+  }, 
+  content: {
+    flex: 1,
+    alignSelf: 'stretch'
   }
 
 });
