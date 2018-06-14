@@ -9,8 +9,8 @@ import {
 
 import TodoItem from './TodoItem';
 
-
 export default class TodoList extends Component {
+
   render() {
     return (
       <View style={styles.container}>
